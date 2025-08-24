@@ -1,4 +1,4 @@
-package pqc
+package tls
 
 import (
 	"crypto/tls"
@@ -11,7 +11,7 @@ const (
 	responseBody = "Hello, TLS!"
 )
 
-func main() {
+func Server() {
 	cert, err := tls.LoadX509KeyPair("server.crt", "server.key")
 	if err != nil {
 		log.Fatalf("Failed to load X509 key pair: %v", err)
