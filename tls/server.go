@@ -12,7 +12,8 @@ const (
 )
 
 func Server() {
-	cert, err := tls.LoadX509KeyPair("server.crt", "server.key")
+	log.Default().Println("Starting TLS server ....")
+	cert, err := tls.LoadX509KeyPair("tls/server.crt", "tls/server.key")
 	if err != nil {
 		log.Fatalf("Failed to load X509 key pair: %v", err)
 	}

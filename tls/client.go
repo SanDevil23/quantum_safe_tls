@@ -14,7 +14,7 @@ const (
 )
 
 func Client() {
-	cert, err := os.ReadFile("ca.crt")
+	cert, err := os.ReadFile("tls/ca.crt")
 	if err != nil {
 		log.Fatalf("Failed to read certificate file: %v", err)
 	}

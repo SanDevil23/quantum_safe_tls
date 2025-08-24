@@ -1,4 +1,4 @@
-# Omit files
+# certs and keys
 *.crt
 *.key
 *.csr
